@@ -1,41 +1,44 @@
 --Frontend Assessment for Article Application--
 
-Starting the Project
-Clone Repository: Begin by cloning this repository to your local machine.
-Create a New Branch: Create a new branch with the name firstname-lastname to work on your project.
-React Project: Create a new React project.
-Instructions
-Design a web application using FIGMA and build it with React and CSS. This application should allow admins to create, modify, delete articles, and normal users to display all the created articles. The interface should be user-friendly.
+#Starting the Project
+- Clone Repository: Begin by cloning this repository to your local machine.
+- Create a New Branch: Create a new branch with the name firstname-lastname to work on your project.
+- React Project: Create a new React project.
 
-Requirements
+#Instructions
+- Design a web application using FIGMA and build it with React and CSS. This application should allow admins to create, modify, delete articles, and normal users to display all the created articles. The interface should be user-friendly.
+
+#Requirements
 Three Pages:
+- A page to display all the created articles.
+- A page for adding, updating, or deleting articles(Dashboard).
+- A page to show specific article (by ID).
 
-A page to display all the created articles.
-A page for adding, updating, or deleting articles(Dashboard).
-A page to show specific article (by ID).
 All Article Display Page:
+- List all created articles.
+- Each card should have view more button to redirect the the One Article Page.
 
-List all created articles.
-Each card should have view more button to redirect the the One Article Page.
 One Article Display Page:
+- Show all informations of only one article.
 
-Show all informations of only one article.
 Article Dashboard Page:
+- Divide the page into section to add, update, delete articles.
 
-Divide the page into section to add, update, delete articles.
-Note that your dashboard will not be secured(no need to login/register) so any one can go to the dashboard do whatever he/she needs and return back to the main page.
-Responsiveness:
+*Note that your dashboard will not be secured(no need to login/register) so any one can go to the dashboard do whatever he/she needs and return back to the main page.
 
-Ensure the application works on mobile devices.
-Bonus
+#Responsiveness:
+- Ensure the application works on mobile devices.
+
+#Bonus:
 Search Feature:
+- Implement a article search functionality by title.
 
-Implement a article search functionality by title.
 Sorting Feature:
-
-Allow users to sort memes by date created or alphabetically by title.
+- Allow users to sort memes by date created or alphabetically by title.
 Submission
+
 After implementing the project, stage your changes, commit them, and push to your branch.
 To submit the figma file, create a text file name it FIGMA and add the link for you Figma file(Make sure to access anyone with the link).
-Notes
-You are free to use any image hosting service for storing article images.
+
+#Notes:
+- You are free to use any image hosting service for storing article images.

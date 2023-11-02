@@ -1,20 +1,20 @@
 --Backend Assessment for Article Application--
 
-Setting up the Backend
+#Setting up the Backend
 - Clone Repository: Begin by cloning the backend repository to your local machine.
 - Create a New Branch: Create a new branch with the name firstname-lastname to work on your project.
 
-Node.js Project: 
+#Node.js tasks: 
 - Set up a new Node.js project for the backend.
 - Install Dependencies: Install the required dependencies.
 
-Create database: 
+#Create database: 
 - Create a new database for the project using MongoDB Atlas.
 
-Instructions:
+#Instructions:
 - Develop the backend for the article application to handle article creation, article retrieval, article updating, and article deletion.
 
-Requirements:
+#Requirements:
 Article Data Model:
 - Create a article schema using Mongoose for storing article data.
 - The schema should include fields for image URLs, title, category, body, and author.
