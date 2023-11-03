@@ -34,7 +34,7 @@ Search Feature:
 - Implement a article search functionality by title.
 
 Sorting Feature:
-- Allow users to sort memes by date created or alphabetically by title.
+- Allow users to sort articles by date created or alphabetically by title.
 Submission
 
 After implementing the project, stage your changes, commit them, and push to your branch.
