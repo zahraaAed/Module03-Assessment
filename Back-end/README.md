@@ -9,21 +9,20 @@
 - Install Dependencies: Install the required dependencies.
 
 #Create database: 
-- Create a new database for the project using MongoDB Atlas.
+- Create a new database for the project using SQL.
 
 #Instructions:
 - Develop the backend for the article application to handle article creation, article retrieval, article updating, and article deletion.
 
 #Requirements:
 Article Data Model:
-- Create a article schema using Mongoose for storing article data.
+- Create a article schema for storing article data.
 - The schema should include fields for image URLs, title, category, body, and author.
 - All fields should be required.
 - Set timestamps for the schema.
 
 Article Creation API:
 - Create an API endpoint for adding new articles.
-- The endpoint should accept the article data as a JSON object in the request body.
 - Save the created articles to the database.
 
 Article Retrieval API:
