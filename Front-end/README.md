@@ -6,7 +6,7 @@
 - React Project: Create a new React project.
 
 #Instructions
-- Design a web application using FIGMA and build it with React and CSS. This application should allow admins to create, modify, delete articles, and normal users to display all the created articles. The interface should be user-friendly.
+- Design a web application using FIGMA and build it with React and CSS (Upload a screenshot of Figma design and push to git). This application should allow admins to create, modify, delete articles, and normal users to display all the created articles. The interface should be user-friendly.
 
 #Requirements
 Three Pages:
