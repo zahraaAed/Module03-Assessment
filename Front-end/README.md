@@ -38,7 +38,7 @@ Sorting Feature:
 Submission
 
 After implementing the project, stage your changes, commit them, and push to your branch.
-To submit the figma file, create a text file name it FIGMA and add the link for you Figma file(Make sure to access anyone with the link).
+To submit the figma file, create a text file name it FIGMA and add the link for you Figma image(Screenshot).
 
 #Notes:
 - You are free to use any image hosting service for storing article images.
