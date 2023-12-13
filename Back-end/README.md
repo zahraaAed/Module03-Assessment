@@ -20,6 +20,7 @@ Article Data Model:
 - The schema should include fields for image URLs, title, category, body, and author.
 - All fields should be required.
 - Set timestamps for the schema.
+- Create User/Admin table
 
 Article Creation API:
 - Create an API endpoint for adding new articles.
