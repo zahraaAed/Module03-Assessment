@@ -1,0 +1,12 @@
+.article-container{
+    display: flex;
+    flex-direction: row;
+    gap: 120px;
+
+justify-content: center;
+}
+.body-article{
+   /* margin-right: 40px; */
+   max-width: 500px;
+    
+}

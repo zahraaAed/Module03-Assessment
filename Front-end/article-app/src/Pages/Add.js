@@ -7,7 +7,7 @@ const Add = () => {
   const [author, setAuthor] = useState("");
   const [body, setBody] = useState("");
   const [category, setCategory] = useState("");
-
+   const[img,setImg]=useState([]);
   const fetchData = async () => {
     try {
       const response = await axios.post(
@@ -17,18 +17,14 @@ const Add = () => {
           author,
           body,
           category,
+          img,
         }
       );
       setarticle(response.data.article);
     } catch (error) {
       console.error("Error fetching data:", error);
     }
-  };
-
-  const handleClick = (props) => {
-  
-  };
-  
+  };  
 
   return (
     <>
@@ -39,36 +35,41 @@ const Add = () => {
             <label for="fname">Title</label>
             <input
               type="text"
-              id="fname"
-              name="fname"
+              id="title"
+              name="title"
               onChange={(e) => setTitle(e.target.value)}
             ></input>
             <label for="lname">category</label>
             <input
               type="text"
-              id="lname"
-              name="lname"
+              id="category"
+              name="category"
               onChange={(e) => setCategory(e.target.value)}
             ></input>
             <label for="lname">Author</label>
             <input
               type="text"
-              id="lname"
-              name="lname"
+              id="author"
+              name="author"
               onChange={(e) => setAuthor(e.target.value)}
             ></input>
             <label for="lname">body</label>
             <input
               type="text"
-              id="lname"
-              name="lname"
+              id="body"
+              name="body"
               onChange={(e) => setBody(e.target.value)}
             ></input>
-
+            
+            <input
+              type="file"
+              id="file-img"
+              name="file-img"
+                onChange={(e) => setImg(e.target.files)}
+            ></input>
             <button
-              onClick={() => {
-                handleClick();
-              }}
+        
+              
             >
               Submit
             </button>
