@@ -12,17 +12,12 @@ sequelize.sync();
 
 // Use body-parser middleware to parse JSON and URL-encoded data
 app.use(bodyParser.json());
-// app.use((err, req, res, next) => {
-//   if (err instanceof SyntaxError && err.status === 400 && 'body' in err) {
-//     console.error('Bad JSON:', err.message);
-//     res.status(400).json({ message: 'Bad JSON' });
-//   } else {
-//     next();
-//   }
-// });
+app.use(express.static("./"))
+
+
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use("/api/article", ArticleRoute);
-
+app.use(express.static('Back-end/images'));
 // app.use((req, res, next) => {
 //   let data = '';
 

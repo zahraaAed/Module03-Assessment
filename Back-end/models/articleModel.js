@@ -21,11 +21,15 @@ const Article= sequelize.define("article", {
         type: DataTypes.STRING,
         allowNull: false,
     },
+    img: {
+        type: DataTypes.STRING,
+        allowNull: false,
+    },
    
 }, {
     freezeTableName: true,
 });
-Article.sync()
+Article.sync({force:true})
 // Sync the model with the database
 
 // Article.sync();

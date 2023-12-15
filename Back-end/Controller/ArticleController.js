@@ -41,9 +41,10 @@ export const deleteArticle = async (req,res,next) =>{
 
 //add
 export const addArticle = async (req, res) => {
+    const img = req.file?.path
     try {
-        const {author, title, body, category} = req.body
-        const article = await Article.create({author, title, body, category});
+        const {author, title, body, category,image} = req.body
+        const article = await Article.create({author, title, body, category,img});
         res.status(200).json({  message: "article created successfully" });
     }catch (error) {
    
@@ -51,4 +52,18 @@ export const addArticle = async (req, res) => {
     }
    };
 
+//update
+export const updateArticle= async (req,res,next) =>{
+    const { articleId} = req.params;
+    const img = req.file?.path
+    try{
+        if(req.body){
+            const article=await Article.update({...req.body,img},{where:{id:articleId}});
+            return res.status(200).json({message:`article updated successfully!`,article:article});
+        }
+        res.status(400).json({message:'something went wrong'})
 
+    }catch(err){console.error(err);
+    }
+
+}
