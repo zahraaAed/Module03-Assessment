@@ -1,5 +1,5 @@
 import "./App.css";
-import Add from "./Pages/Add.js";
+import Add from "./Pages/Admin.js";
 import HomePage from "./Pages/Home.js";
 import React from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";

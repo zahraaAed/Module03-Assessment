@@ -35,7 +35,7 @@ const HomePage = () => {
 
 
 
-          <h2>Title:{article.title}</h2>
+          <h2>{article.title}</h2>
           <p>Author: {article.author}</p>
           <p>Date: {article.createdAt.split("T")[0]}</p>
           <p>Category: {article.category}</p>

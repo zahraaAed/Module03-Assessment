@@ -1,12 +1,24 @@
+body{
+    background-color: beige;
+    margin: 50px;
+}
+
+
 .article-container{
     display: flex;
     flex-direction: row;
     gap: 120px;
 
 justify-content: center;
+padding-top: 100px;
+
 }
 .body-article{
    /* margin-right: 40px; */
    max-width: 500px;
-    
+}
+h1{
+ text-align: center;
+ font-size: 70px;
+ color: rgb(226, 43, 195);
 }
