@@ -29,7 +29,7 @@ const Article= sequelize.define("article", {
 }, {
     freezeTableName: true,
 });
-Article.sync({force:true})
+Article.sync()
 // Sync the model with the database
 
 // Article.sync();

@@ -41,13 +41,22 @@ export const deleteArticle = async (req,res,next) =>{
 
 //add
 export const addArticle = async (req, res) => {
-    const img = req.file?.path
+
+    if(!req.body.title || !req.body.body || !req.body.author || !req.body.category) {
+        res.status(400).json({
+            message: 'Please fill all the fields'
+        })
+
+        return
+    }
     try {
-        const {author, title, body, category,image} = req.body
-        const article = await Article.create({author, title, body, category,img});
+        const image=req.file.path||null
+        const {author, title, body, category} = req.body
+        const article = await Article.create({author, title, body, category,img:image});
+        console.log(article)
         res.status(200).json({  message: "article created successfully" });
     }catch (error) {
-   
+   console.log(error)
      res.status(500).json({ message: error.message});
     }
    };
