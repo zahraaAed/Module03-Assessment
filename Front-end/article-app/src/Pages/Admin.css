@@ -26,3 +26,11 @@ form{
     gap:15px;
     
 }
+.articles-edit{
+    display: flex;
+    flex-direction: row;
+    gap: 120px;
+
+
+padding-top: 100px;
+}
